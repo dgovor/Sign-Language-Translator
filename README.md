@@ -1,2 +1,2 @@
-# Sign-Language-Detection1
+# Sign-Language-Translator
 Work in Progress
