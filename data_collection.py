@@ -35,18 +35,17 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_c
 
         draw_landmarks(image, results)
 
+        cv2.putText(image, 'Collecting frames for the letter "{}". Video Number {}'.format(action, sequence), (15,12), 
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
+
         if frame_num == 0: 
             cv2.putText(image, 'PAUSE', (15,50), 
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 4, cv2.LINE_AA)
             cv2.putText(image, 'Press any key to continue', (15,80), 
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 4, cv2.LINE_AA)
-            cv2.putText(image, 'Collecting frames for the letter "{}". Video Number {}'.format(action, sequence), (15,12), 
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
             cv2.imshow('OpenCV feed', image)
             cv2.waitKey(0)
         else: 
-            cv2.putText(image, 'Collecting frames for the letter "{}". Video Number {}'.format(action, sequence), (15,12), 
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
             cv2.imshow('OpenCV feed', image)
         
         keypoints = extract_keypoints(results)
