@@ -2,20 +2,21 @@
 import cv2
 import numpy as np
 import os
-from matplotlib import pyplot as plt
 import time 
 import mediapipe as mp
 from itertools import product
 from my_functions import *
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.utils import to_categorical
 
 DATA_PATH = os.path.join('Data') 
 
 #actions = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
 
-actions = np.array(['a', 'b'])
+actions = np.array(['c', 'd'])
 
 no_sequences = 30
-sequence_length = 30
+sequence_length = 10
 
 for action in actions: 
     for sequence in range(no_sequences):
