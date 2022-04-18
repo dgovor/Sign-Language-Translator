@@ -58,8 +58,8 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
              break
 
         keypoints = keypoint_extraction(results)
-        npy_path = os.path.join(PATH, action, str(sequence), str(frame))
-        np.save(npy_path, keypoints)
+        frame_path = os.path.join(PATH, action, str(sequence), str(frame))
+        np.save(frame_path, keypoints)
 
     cap.release()
     cv2.destroyAllWindows()
