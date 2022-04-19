@@ -27,7 +27,6 @@ for action, sequence in product(actions, range(sequences)):
     landmarks.append(temp)
     labels.append(label_map[action])
 
-# %%
 X, Y = np.array(landmarks), to_categorical(labels).astype(int)
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.10, random_state=34, stratify=Y)
