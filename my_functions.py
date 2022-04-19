@@ -1,7 +1,7 @@
 import mediapipe as mp
 import cv2
 import numpy as np
-# %%
+
 def draw_landmarks(image, results):
     mp.solutions.drawing_utils.draw_landmarks(image, results.left_hand_landmarks, mp.solutions.holistic.HAND_CONNECTIONS)
     mp.solutions.drawing_utils.draw_landmarks(image, results.right_hand_landmarks, mp.solutions.holistic.HAND_CONNECTIONS)
