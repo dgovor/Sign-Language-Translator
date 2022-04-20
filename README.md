@@ -1,5 +1,5 @@
 # Sign-Language-Translator
-Work in Progress (The code will get the comments in the upcoming days)
+**Work in Progress** (The code will get the comments in the upcoming days)
 
 Neural Network created using Sequential architecture and combination of LSTM and Dense layers in order to translate American Sign Language (ASL) into text.
 
