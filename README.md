@@ -9,10 +9,13 @@ Neural Network created using Sequential architecture and combination of LSTM and
 ## Description
 
 This project provides an opportunity for people to train their own Neural Network by recording their own dataset of ASL signs in an intuitive and simple manner.
-The whole project can be split into three different parts:
+The whole project can be split into three separate parts:
 1. Data collection;
 2. Model training;
 3. Real time predictions.
 
 ## Data Collection
 
+## Model Training
+
+## Real Time Predictions
