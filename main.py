@@ -31,10 +31,10 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
             keypoints = np.array(keypoints)
             prediction = model.predict(keypoints[np.newaxis, :, :])
             keypoints = []
-
-        if np.amax(prediction) > 0.9:
-            if sentence[-1] != actions[np.argmax(prediction)]:
-                sentence.append(actions[np.argmax(prediction)])
+            
+            if np.amax(prediction) > 0.9:
+                if sentence[-1] != actions[np.argmax(prediction)]:
+                    sentence.append(actions[np.argmax(prediction)])
 
         if len(sentence) > 7:
             sentence = sentence[-7:]
