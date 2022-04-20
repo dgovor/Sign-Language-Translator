@@ -38,6 +38,9 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
 
         if len(sentence) > 7:
             sentence = sentence[-7:]
+        
+        if keyboard.is_pressed(' '):
+            sentence = [' ']
 
         textsize = cv2.getTextSize(' '.join(sentence), cv2.FONT_HERSHEY_SIMPLEX, 1, 2)[0]
         text_X_coord = (image.shape[1] - textsize[0]) // 2
