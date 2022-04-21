@@ -16,6 +16,12 @@ The whole project can be split into three separate parts:
 
 ## Data Collection
 
+TBA
+
 ## Model Training
 
+TBA
+
 ## Real Time Predictions
+
+TBA
