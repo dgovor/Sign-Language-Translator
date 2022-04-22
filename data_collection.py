@@ -36,9 +36,9 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
                 draw_landmarks(image, results)
 
                 cv2.putText(image, 'Recroding data for the "{}". Sequence number {}.'.format(action, sequence),
-                            (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1, cv2.LINE_AA)
-                cv2.putText(image, 'Pause.', (20,400), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2, cv2.LINE_AA)
-                cv2.putText(image, 'Press "Space" when you are ready.', (20,450), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2, cv2.LINE_AA)
+                            (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1, cv2.LINE_AA)
+                cv2.putText(image, 'Pause.', (20,400), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2, cv2.LINE_AA)
+                cv2.putText(image, 'Press "Space" when you are ready.', (20,450), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2, cv2.LINE_AA)
                 cv2.imshow('Camera', image)
                 cv2.waitKey(1)
 
@@ -50,7 +50,7 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
             draw_landmarks(image, results)
 
             cv2.putText(image, 'Recroding data for the "{}". Sequence number {}.'.format(action, sequence),
-                        (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1, cv2.LINE_AA)
+                        (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1, cv2.LINE_AA)
             cv2.imshow('Camera', image)
             cv2.waitKey(1)
         
