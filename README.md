@@ -26,7 +26,7 @@ In order for a user to collect data and create their own dataset, the [data_coll
 
 Coming soon.
 
-After the data has been collected and the dataset is complete, the user can proceed with the model training. In this step the dataset is split into two subsets: 90% of the dataset is used for training and 10% is for testing.
+After the data has been collected and the dataset is complete, the user can proceed with the model training. In this step the dataset is split into two subsets: 90% of the dataset is used for training and 10% for testing.
 
 ## Real Time Predictions
 
