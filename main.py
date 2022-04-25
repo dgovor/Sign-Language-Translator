@@ -17,7 +17,7 @@ sentence, keypoints = [' '], []
 
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
-    print("Cannot access camera")
+    print("Cannot access camera.")
     exit()
 
 with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_confidence=0.75) as holistic:
