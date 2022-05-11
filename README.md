@@ -24,15 +24,15 @@ In order for a user to collect data and create their own dataset, the [data_coll
 
 ## Model Training
 
-Coming soon.
-
-After the data has been collected and the dataset is complete, the user can proceed with the model training. In this step the dataset is split into two subsets: 90% of the dataset is used for training and 10% for testing. The accuracy of testing using these 10% of the dataset will provide the insight into the efficiency of the model.
+After the data has been collected and the dataset is complete, the user can proceed with the model training. In this step the dataset is split into two subsets: 90% of the dataset is used for training and 10% for testing. The accuracy of testing using this 10% of the dataset will provide insight into the efficiency of the model.
 
 For this particular project, the Neural Network is built using a Sequential model instance by passing three LSTM and two Densely-connected layers. First four of these layers use the ReLU activation function with the last layer using the Softmax activation function. In the process of training, the Adam optimization algorithm is used to obtain optimal parameters for each layer.
 
+Once the Neural Network is compiled, one can proceed with the model training. During this step, the user can provide the model with the training subset, associated labels, and the number of epochs.
+
 ## Real Time Predictions
 
-Coming soon.
+
 
 ## Results
 
