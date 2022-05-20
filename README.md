@@ -32,8 +32,4 @@ Once the Neural Network is compiled, one can proceed with the model training and
 
 ## Real Time Predictions
 
-
-
-## Results
-
-Coming soon.
+On this step the Neural Network is ready to apply everything it has learnt to the real-world problem. [MediaPipe Holistic](https://google.github.io/mediapipe/solutions/holistic) pipeline processes every frame captured by a videocamera and extracts hands' landmarks. Every new frame the scripts appends the landmarks to the previous ones until it reaches the length 10. Once 10 frames are processed and the corresponding landmarks are grouped together, the script converts the list with all the landmarks into an array and passes this array to the trained Neural Network so it can predict the sign of the user's hands.
