@@ -5,6 +5,7 @@ import numpy as np
 import os
 import mediapipe as mp
 import cv2
+import keyboard
 from my_functions import *
 from tensorflow.keras.models import load_model
 
@@ -75,8 +76,11 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
         cv2.imshow('Camera', image)
         
         cv2.waitKey(1)
+
+        # Check if the 'Camera' window was closed and break the loop
         if cv2.getWindowProperty('Camera',cv2.WND_PROP_VISIBLE) < 1:
             break
 
+    # Release the camera and close all windows
     cap.release()
     cv2.destroyAllWindows()
