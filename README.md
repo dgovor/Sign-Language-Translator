@@ -1,6 +1,6 @@
 # Sign-Language-Translator
 
-This project aimed at developing a Neural Network using LSTM and Dense layers to translate American Sign Language (ASL) gestures into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions.
+This project is aimed at developing a Neural Network using LSTM and Dense layers to translate American Sign Language (ASL) gestures into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions.
 
 <p align="center"> <img src="img/1.gif" alt="drawing" width="450"/> </p>
 
