@@ -6,7 +6,7 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 * User-friendly data collection process for creating custom ASL datasets.
 * Training of a Neural Network model using LSTM and Dense layers.
 * Real-time predictions of ASL signs based on hand landmarks.
-* Integration of MediaPipe Holistic pipeline for accurate hand tracking."
+* Integration of MediaPipe Holistic pipeline for accurate hand tracking.
 
 <p align="center"> <img src="img/1.gif" alt="drawing" width="450"/> </p>
 
@@ -15,8 +15,8 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 
 This project provides an opportunity for people to train their own Neural Network by recording their own dataset of ASL signs in an intuitive and simple manner.
 The whole project can be split into three main parts:
-1. Data collection;
-2. Model training;
+1. Data collection.
+2. Model training.
 3. Real time predictions.
 
 ## Data Collection
