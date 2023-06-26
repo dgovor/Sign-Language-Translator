@@ -1,4 +1,6 @@
 # %%
+
+# Import necessary libraries
 import os
 import numpy as np
 import cv2
@@ -7,10 +9,14 @@ from itertools import product
 from my_functions import *
 import keyboard
 
+# Define the actions (signs) that will be recorded and stored in the dataset
 actions = np.array(['a', 'b'])
+
+# Define the number of sequences and frames to be recorded for each action
 sequences = 30
 frames = 10
 
+# Set the path where the dataset will be stored
 PATH = os.path.join('data')
 
 for action, sequence in product(actions, range(sequences)):
