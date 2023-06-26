@@ -21,7 +21,7 @@ The whole project can be split into three main parts:
 
 ## Data Collection
 
-In order for a user to collect data and create their own dataset, the [data_collection.py](https://github.com/dgovor/Sign-Language-Translator/blob/main/data_collection.py) is used. The script is organized in a way that it would be easy to configure your own preferences and options, such as the signs the user would like to add to their dataset, the number of sequences for each sign, the number of frames for each sequence, and the path where the user would like to store the dataset. Onces these parameters were set and the script is running, the user can start recording the data. <ins>It is recommended that the user records a substantial number of sequences changing the position of their hands. This way the user can ensure data diversity which helps to obtain a generalized model.</ins>
+In order for a user to collect data and create their own dataset, the [data_collection.py](https://github.com/dgovor/Sign-Language-Translator/blob/main/data_collection.py) is used. The script is organized in a way that it would be easy to configure your own preferences and options, such as the signs the user would like to add to their dataset, the number of sequences for each sign, the number of frames for each sequence, and the path where the user would like to store the dataset. Once these parameters were set and the script is running, the user can start recording the data. <ins>It is recommended that the user records a substantial number of sequences changing the position of their hands. This way the user can ensure data diversity which helps to obtain a generalized model.</ins>
 
 <p align="center"> <img src="img/2.gif" alt="drawing" width="450"/> </p>
 
