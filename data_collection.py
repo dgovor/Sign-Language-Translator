@@ -26,12 +26,13 @@ for action, sequence in product(actions, range(sequences)):
     except:
         pass
 
-# Access the camera for recording data
+# Access the camera and check if the camera is opened successfully
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Cannot access camera.")
     exit()
 
+# Create a MediaPipe Holistic object for hand tracking and landmark extraction
 with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_confidence=0.75) as holistic:
     for action, sequence, frame in product(actions, range(sequences), range(frames)):
         if frame == 0: 
