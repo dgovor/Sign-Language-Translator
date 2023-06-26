@@ -19,12 +19,14 @@ frames = 10
 # Set the path where the dataset will be stored
 PATH = os.path.join('data')
 
+# Create directories for each action, sequence, and frame in the dataset
 for action, sequence in product(actions, range(sequences)):
     try:
         os.makedirs(os.path.join(PATH, action, str(sequence)))
     except:
         pass
 
+# Access the camera for recording data
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Cannot access camera.")
