@@ -18,7 +18,7 @@ actions = np.array(os.listdir(PATH))
 # Load the trained model
 model = load_model('my_model')
 
-# Initialize the sentence and keypoints lists
+# Initialize the sentence and keypoints (landmarks) lists
 sentence, keypoints = [' '], []
 
 # Access the camera and check if the camera is opened successfully
