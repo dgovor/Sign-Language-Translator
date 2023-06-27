@@ -12,7 +12,7 @@ from tensorflow.keras.models import load_model
 # Set the path to the data directory
 PATH = os.path.join('data')
 
-# Create an array of action labels by listing the contents of the data directory
+# Create an array of actions (signs) labels by listing the contents of the data directory
 actions = np.array(os.listdir(PATH))
 
 # Load the trained model
