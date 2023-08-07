@@ -8,7 +8,7 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 * Real-time predictions of ASL signs based on hand landmarks.
 * Integration of MediaPipe Holistic pipeline for accurate hand tracking.
 
-<p align="center"> <img src="img/1.gif" alt="drawing" width="450"/> </p>
+<p align="center"> <img src="img/1_1.gif" alt="drawing" width="450"/> </p>
 
 
 ## Description
