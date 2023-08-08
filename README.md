@@ -7,7 +7,7 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 * Training of a Neural Network model using LSTM and Dense layers.
 * Real-time predictions of hand gestures based on hand landmarks.
 * Integration of GingerIt library to perform grammar correction.
-* Integration of MediaPipe Holistic pipeline for accurate hand tracking.
+* Incorporation of MediaPipe Holistic pipeline for accurate hand tracking.
 
 <p align="center"> <img src="img/1_1.gif" alt="drawing" width="450"/> </p>
 
