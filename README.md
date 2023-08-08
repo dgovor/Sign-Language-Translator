@@ -1,6 +1,6 @@
 # Sign-Language-Translator
 
-This project is aimed at developing a Neural Network using LSTM and Dense layers to translate any Sign Language into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions as well as grammar correction of predicted sentences. 
+This project is aimed at developing a Neural Network using LSTM and Dense layers to translate any sign language into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions as well as grammar correction of predicted sentences. 
 
 ### Key Features:
 * User-friendly data collection process for creating custom sign language datasets.
