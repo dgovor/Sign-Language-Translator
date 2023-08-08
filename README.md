@@ -1,11 +1,12 @@
 # Sign-Language-Translator
 
-This project is aimed at developing a Neural Network using LSTM and Dense layers to translate American Sign Language (ASL) gestures into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions.
+This project is aimed at developing a Neural Network using LSTM and Dense layers to translate any Sign Language into text. It provides a user-friendly way for individuals to train their own Neural Network model and enables real-time predictions as well as grammar correction of predicted sentences. 
 
 ### Key Features:
-* User-friendly data collection process for creating custom ASL datasets.
+* User-friendly data collection process for creating custom sign language datasets.
 * Training of a Neural Network model using LSTM and Dense layers.
-* Real-time predictions of ASL signs based on hand landmarks.
+* Real-time predictions of hand gestures based on hand landmarks.
+* Integration of GingerIt library to perform grammar correction.
 * Integration of MediaPipe Holistic pipeline for accurate hand tracking.
 
 <p align="center"> <img src="img/1_1.gif" alt="drawing" width="450"/> </p>
@@ -13,7 +14,7 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 
 ## Description
 
-This project provides an opportunity for people to train their own Neural Network by recording their own dataset of ASL signs in an intuitive and simple manner.
+This project provides an opportunity for people to train their own Neural Network by recording their own dataset of hand gestures in an intuitive and simple manner.
 The whole project can be split into three main parts:
 1. Data collection.
 2. Model training.
@@ -37,8 +38,8 @@ Once the Neural Network is compiled, one can proceed with the model training and
 
 ## Real Time Predictions
 
-On this step the Neural Network is ready to apply everything it has learnt to the real-world problem. [MediaPipe Holistic](https://google.github.io/mediapipe/solutions/holistic) pipeline processes every frame captured by a videocamera and extracts hands' landmarks. Every new frame the scripts appends the landmarks to the previous ones until it reaches the length 10. Once 10 frames are processed and the corresponding landmarks are grouped together, the script converts the list with all the landmarks into an array and passes this array to the trained Neural Network so it can predict the sign of the user's hands.
+In this step, the Neural Network is ready to apply everything it has learned to the real-world problem. [MediaPipe Holistic](https://google.github.io/mediapipe/solutions/holistic) pipeline processes every frame captured by a video camera and extracts hands' landmarks. Every new frame the script appends the landmarks to the previous ones until it reaches the length 10. Once 10 frames are processed and the corresponding landmarks are grouped together, the script converts the list with all the landmarks into an array and passes this array to the trained Neural Network so it can predict the sign of the user's hands. The prediction is then appended to the sentence list initialized earlier and the first word of the sentence is capitalized. Once the user finished recording the sentence they can press "Enter" to perform a grammar check and correction. If the user is not satisfied with the result they can press the "Spacebar" to reset the lists and start over.
 
 ## Conclusion
 
-By combining advanced machine learning techniques and real-time hand tracking, Sign-Language-Translator empowers individuals to bridge the communication gap between ASL gestures and text, facilitating effective communication for the deaf and hearing-impaired.
+By combining advanced machine learning techniques and real-time hand tracking, Sign-Language-Translator empowers individuals to bridge the communication gap between sign language gestures and text, facilitating effective communication for the deaf and hearing-impaired.
