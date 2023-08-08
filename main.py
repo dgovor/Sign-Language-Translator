@@ -115,7 +115,6 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
 
         # Show the image on the display
         cv2.imshow('Camera', image)
-
         cv2.waitKey(1)
 
         # Check if the 'Camera' window was closed and break the loop
