@@ -44,7 +44,7 @@ In this step, the Neural Network is ready to apply everything it has learned to 
 
 By combining advanced machine learning techniques and real-time hand tracking, Sign-Language-Translator empowers individuals to bridge the communication gap between sign language gestures and text, facilitating effective communication for the deaf and hearing-impaired.
 
-## Requirements
+## Prerequisites
 * Python 3.6+
 * Java 8.0+
 * LanguageTool (pip install language-tool-python should take care of downloading LanguageTool)
