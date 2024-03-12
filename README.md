@@ -6,7 +6,7 @@ This project is aimed at developing a Neural Network using LSTM and Dense layers
 * User-friendly data collection process for creating custom sign language datasets.
 * Training of a Neural Network model using LSTM and Dense layers.
 * Real-time predictions of hand gestures based on hand landmarks.
-* Integration of GingerIt library to perform grammar correction.
+* Integration of language_tool_python library to perform grammar correction.
 * Incorporation of MediaPipe Holistic pipeline for accurate hand tracking.
 
 <p align="center"> <img src="img/1_1.gif" alt="drawing" width="450"/> </p>
@@ -43,3 +43,8 @@ In this step, the Neural Network is ready to apply everything it has learned to 
 ## Conclusion
 
 By combining advanced machine learning techniques and real-time hand tracking, Sign-Language-Translator empowers individuals to bridge the communication gap between sign language gestures and text, facilitating effective communication for the deaf and hearing-impaired.
+
+## Requirements
+* Python 3.6+
+* Java 8.0+
+* LanguageTool (pip install language-tool-python should take care of downloading LanguageTool)
