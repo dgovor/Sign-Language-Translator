@@ -9,7 +9,7 @@ import cv2
 from my_functions import *
 import keyboard
 from tensorflow.keras.models import load_model
-from gingerit.gingerit import GingerIt
+import language_tool_python
 
 # Set the path to the data directory
 PATH = os.path.join('data')
@@ -20,8 +20,8 @@ actions = np.array(os.listdir(PATH))
 # Load the trained model
 model = load_model('my_model')
 
-# Create an instance of the GingerIt grammar correction tool
-parser = GingerIt()
+# Create an instance of the grammar correction tool
+tool = language_tool_python.LanguageToolPublicAPI('en-UK')
 
 # Initialize the lists
 sentence, keypoints, last_prediction, grammar, grammar_result = [], [], [], [], []
@@ -91,10 +91,8 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
         if keyboard.is_pressed('enter'):
             # Record the words in the sentence list into a single string
             text = ' '.join(sentence)
-            # Parse the text to check and correct grammar using the parser instance
-            grammar = parser.parse(text)
-            # Extract the corrected result from the parsed grammar
-            grammar_result = grammar['result']
+            # Apply grammar correction tool and extract the corrected result
+            grammar_result = tool.correct(text)
 
         if grammar_result:
             # Calculate the size of the text to be displayed and the X coordinate for centering the text on the image
@@ -115,6 +113,7 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
 
         # Show the image on the display
         cv2.imshow('Camera', image)
+
         cv2.waitKey(1)
 
         # Check if the 'Camera' window was closed and break the loop
@@ -124,3 +123,6 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.75, min_tracking_
     # Release the camera and close all windows
     cap.release()
     cv2.destroyAllWindows()
+
+    # Shut off the server
+    tool.close()
